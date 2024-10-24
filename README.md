@@ -58,7 +58,7 @@ module "ec2_stop_schedule" {
 
 ```hcl
 module "ecs_eventbridge_schedule" {
-  source              = "./modules/eventbridge_scheduler"
+  source              = ""
   rule_name           = "ecs-task"
   rule_description    = "Executa uma tarefa ECS toda segunda-feira às 9h UTC"
   schedule_expression = "cron(0 9 ? * 2 *)"
